@@ -1,0 +1,5 @@
+class employee{
+public void method(){
+}
+public void method2(){
+}
