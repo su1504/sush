@@ -1,0 +1,126 @@
+1)using System;
+
+namespace ex2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter n");
+            int n = int.Parse(Console.ReadLine());
+            weekdays n1 = (weekdays)n;
+            switch (n1)
+            {
+
+                case weekdays.monday:
+                case weekdays.tuesday:
+                case weekdays.wednesday:
+                case weekdays.thursday:
+                case weekdays.friday:
+                    Console.WriteLine("working day ");
+                    break;
+                case weekdays.saturday:
+                case weekdays.sunday:
+                    Console.WriteLine("holiday ");
+                    break;
+                default:
+                    Console.WriteLine("day is not valid ");
+                    break;
+            }
+        }
+        enum weekdays
+        {
+            monday = 1, tuesday, wednesday, thursday, friday, saturday, sunday
+        }
+    }
+    }
+
+
+8)using System;
+
+namespace excercise2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter n");
+            int n = int.Parse(Console.ReadLine());
+            weekdays n1=(weekdays)n;
+            switch(n1)
+            {
+
+                case weekdays.monday:
+                case weekdays.tuesday:
+                case weekdays.wednesday:
+                case weekdays.thursday:
+                case weekdays.friday:
+                    Console.WriteLine($"working day {n}");
+                    break;
+                case weekdays.saturday:
+                case weekdays.sunday:
+                    Console.WriteLine($"holiday {n} ");
+                    break;
+                default:
+                    Console.WriteLine($"day is not valid {n}");
+                    break;
+            }
+        }
+        enum weekdays
+        {
+            monday=1,tuesday,wednesday,thursday,friday,saturday,sunday
+        }
+           
+        }
+    }
+
+DS&A
+
+1)Binary search algorithm 
+public static object BinarySearchIterative(int[] inputArray, int key)  
+{ 
+  int min = 0;
+  int max = inputArray.Length - 1; 
+    while (min <=max)  
+    {  
+       int mid = (min + max) / 2;  
+       if (key == inputArray[mid])  
+       {  
+            return ++mid;  
+       }  
+       else if (key < inputArray[mid])  
+       {  
+           max = mid - 1;  
+       }  
+       else  
+       {  
+            min = mid + 1;  
+       }  
+   }  
+   return "Nil";  
+}  
+
+2)using System;
+namespace BubbleSort {
+   class MySort {
+      static void Main(string[] args) {
+         int[] arr = { 78, 55, 45, 98, 13 };
+         int temp;
+         for (int j = 0; j <= arr.Length - 2; j++) {
+            for (int i = 0; i <= arr.Length - 2; i++) {
+               if (arr[i] > arr[i + 1]) {
+                  temp= arr[i + 1];
+                  arr[i + 1] = arr[i];
+                  arr[i] = temp;
+               }
+            }
+         }
+         Console.WriteLine("Sorted:");
+         foreach (int p in arr)
+            Console.Write(p + " ");
+         Console.Read();
+      }
+   }
+}
+2)Bubble sort algorithm 
+
