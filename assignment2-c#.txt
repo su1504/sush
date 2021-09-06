@@ -1,0 +1,31 @@
+assignment2---day2
+
+1)using System;
+
+namespace circel
+{
+     class circle
+    {
+        public double radius { get; set; }
+        public double calcDiameter(double radius)
+        {
+            return (radius * radius);
+        }
+        public double calcArea(double radius)
+        {
+            return 3.14 * Math.Sqrt(radius);
+        }
+    }
+    class circleTest
+    {
+        static void Main(string[] args)
+        {
+            circle circle1 = new circle();
+            Console.WriteLine(circle1.calcDiameter(5));
+            Console.WriteLine(circle1.calcArea(5));
+
+        }
+    }
+}
+
+2)
